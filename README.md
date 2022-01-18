@@ -7,6 +7,8 @@
 ## General Info
 This browser based web application to ...
 # Hi my name is Navdeep. I'm excited about this project because we get to work in a collabortive effort on visual studio
+Hi my name is Bryant. I'm excited about this project because I am interested in learning more about programming.
+	
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
