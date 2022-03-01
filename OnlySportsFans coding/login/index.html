@@ -10,6 +10,15 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-------------------------------------------------------->
+    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+    <!-------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
     <title>Login</title>
 </head>
 
@@ -36,7 +45,7 @@
                 <h2>LOGIN</h2>
                 <input type="text" placeholder="Email">
                 <input type="password" placeholder="Password">
-                <input type="button" value="Login">
+                <a href="/Main/index.html"><input type="button" value="Login"></a>
                 <a href="">Forgot password?</a>
             </div>
             <div class="register-show">
@@ -44,11 +53,12 @@
                 <input type="text" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Confirm Password">
-                <a href="/dist/index.html"><input type="button" value="Register"></a>
+                <a href="/Main/index.html"><input type="button" value="Register"></a>
             </div>
         </div>
     </div>
     <script src="./js/main.js"></script>
+    <script src="./js/firebaseAPI_BBY03.js"></script>
 </body>
 
 </html>
