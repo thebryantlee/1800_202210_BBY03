@@ -1,4 +1,4 @@
-## My Web Application (Add your Title here)
+## OnlySportsFan
 
 * [General info](#general-info)
 * [Technologies](#technologies)
