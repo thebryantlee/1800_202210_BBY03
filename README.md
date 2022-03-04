@@ -8,7 +8,7 @@
 This browser based web application to ... (Bryant - I'll add that here)
 # Hi my name is Navdeep. I'm excited about this project because we get to work in a collabortive effort on visual studio
 # Hi my name is Bryant. I'm excited about this project because I am interested in learning more about programming.
-# Hi my name is Kasra E. I'm excited about this project because it is interesting to see if we can make a useful working web aplication. 
+# Hi my name is Kasra E. I'm excited about this project because it is interesting to see if we can make a working web aplication. 
 	
 ## Technologies
 Technologies used for this project:
