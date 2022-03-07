@@ -10,6 +10,18 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ @font-face{
+  font-family: 'gotham';
+  src: url(/fonts/Gotham.ttf);
+}
+@font-face {
+  font-family: 'rog';
+  src: url(/fonts/Rog.ttf);
+}
+@font-face {
+  font-family: 'mar';
+  src: url(/fonts/marguerite.ttf);
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
