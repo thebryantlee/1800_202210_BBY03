@@ -7,6 +7,14 @@
 // Scripts
 // 
 
+var sold = function(){
+    alert('Sold')
+}
+
+var bought = function(){
+    alert('Bought')
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
