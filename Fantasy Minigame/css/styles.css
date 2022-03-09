@@ -101,6 +101,18 @@
   }
 }
 
+#CanadaImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#ChloeImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
