@@ -27,7 +27,7 @@ function populateInfo() {
                     //get the data fields of the user
                     var userName = userDoc.data().name;
                     var userSchool = userDoc.data().email;
-                    var userCity = userDoc.data().address;
+                    var userCity = userDoc.data().city;
 
                     //if the data fields are not empty, then write them in to the form.
                     if (userName != null) {
