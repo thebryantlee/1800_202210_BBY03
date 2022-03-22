@@ -17,6 +17,9 @@
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./css/styles.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 </head>
 
 <body id="page-top">
@@ -63,13 +66,16 @@
     <!--main content-->
     <!-- link below -->
     <!--insert js here from demo 8-10-->
-    <h1>Welcome back, Test User</h1>
+    <div id="firebaseui-auth-container">
+        <h1>Welcome back, <span id="name-goes-here"></span></h1>
+    </div>
         <!-- <span id="userName"></span></h1> -->
     <div class="inner_left">
         <div class="league_cover_wrapper">
             <div id="best" class="player_search_tabs activ">
                 <div class="players_responsive_table_wrapper">
                     <table class="table">
+                        <!-- Team Canada -->
                         <tr>
                             <td class="profile_info">
                                 <div class="align-items-center justify-content-start">
@@ -100,7 +106,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_one" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -111,13 +116,13 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Chloe Kim -->
                         <tr>
                             <td class="profile_info">
                                 <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
@@ -126,7 +131,7 @@
                                         <p>USA</p>
                                     </div>
                                     <div class="player_photo">
-                                        <figure id="Picture">
+                                        <figure id="Picture2">
                                             <a target="_blank">
                                                 <img id="ChloeImage" alt=""
                                                     src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
@@ -142,7 +147,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_two" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -153,13 +157,13 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Kent Johnson -->
                         <tr>
                             <td class="profile_info">
                                 <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
@@ -168,7 +172,7 @@
                                         <p>Canada</p>
                                     </div>
                                     <div class="player_photo">
-                                        <figure id="Picture2">
+                                        <figure id="Picture3">
                                             <a target="_blank">
                                                 <img id="KentImage" alt=""
                                                     src="https://pbs.twimg.com/media/FLLLWZKWUAkAakE.jpg">
@@ -184,7 +188,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_three" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -195,19 +198,27 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Eileen Gu -->
                         <tr>
                             <td class="profile_info">
-                                <div class="d-flex align-items-center justify-content-start">
+                                <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
                                         <a href="player-profile.html">Eileen Gu</a>
                                         <p>Event</p>
                                         <p>China</p>
+                                    </div>
+                                    <div class="player_photo">
+                                        <figure id="Picture2">
+                                            <a target="_blank">
+                                                <img id="ChloeImage" alt=""
+                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                            </a>
+                                        </figure>
                                     </div>
                                 </div>
                             </td>
@@ -218,7 +229,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_four" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -229,19 +239,27 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Henrik Harlaut -->
                         <tr>
                             <td class="profile_info">
-                                <div class="d-flex align-items-center justify-content-start">
+                                <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
                                         <a href="player-profile.html">Henrik Harlaut</a>
                                         <p>Event</p>
                                         <p>Sweden</p>
+                                    </div>
+                                    <div class="player_photo">
+                                        <figure id="Picture2">
+                                            <a target="_blank">
+                                                <img id="ChloeImage" alt=""
+                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                            </a>
+                                        </figure>
                                     </div>
                                 </div>
                             </td>
@@ -252,7 +270,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_five" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -263,19 +280,27 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Mark McMorris -->
                         <tr>
                             <td class="profile_info">
-                                <div class="d-flex align-items-center justify-content-start">
+                                <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
                                         <a href="player-profile.html">Mark McMorris</a>
                                         <p>Event</p>
                                         <p>Canada</p>
+                                    </div>
+                                    <div class="player_photo">
+                                        <figure id="Picture2">
+                                            <a target="_blank">
+                                                <img id="ChloeImage" alt=""
+                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                            </a>
+                                        </figure>
                                     </div>
                                 </div>
                             </td>
@@ -286,7 +311,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_six" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -297,19 +321,27 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Shaun White -->
                         <tr>
                             <td class="profile_info">
-                                <div class="d-flex align-items-center justify-content-start">
+                                <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
                                         <a href="player-profile.html">Shaun White</a>
                                         <p>Event</p>
                                         <p>USA</p>
+                                    </div>
+                                    <div class="player_photo">
+                                        <figure id="Picture2">
+                                            <a target="_blank">
+                                                <img id="ChloeImage" alt=""
+                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                            </a>
+                                        </figure>
                                     </div>
                                 </div>
                             </td>
@@ -320,7 +352,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_seven" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -331,19 +362,27 @@
                                 </div>
                             </td>
                         </tr>
+                        <!-- Yuzuru Hanyu -->
                         <tr>
                             <td class="profile_info">
-                                <div class="d-flex align-items-center justify-content-start">
+                                <div class="align-items-center justify-content-start">
                                     <div class="wrapper">
                                         <a href="player-profile.html"
                                             class="d-flex align-items-end justify-content-center">
-
                                         </a>
                                     </div>
                                     <div class="player_name">
                                         <a href="player-profile.html">Yuzuru Hanyu</a>
                                         <p>Event</p>
                                         <p>Japan</p>
+                                    </div>
+                                    <div class="player_photo">
+                                        <figure id="Picture2">
+                                            <a target="_blank">
+                                                <img id="ChloeImage" alt=""
+                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                            </a>
+                                        </figure>
                                     </div>
                                 </div>
                             </td>
@@ -354,7 +393,6 @@
                                         <p>+8.12 <i class="fas fa-caret-up"></i></p>
                                     </div>
                                     <div id="profile_chart_eight" class="charts">
-
                                     </div>
                                 </div>
                             </td>
@@ -430,7 +468,8 @@
         <!-- Core theme JS-->
         <script src="./js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script src="../Main/scripts/firebaseAPI_TEAM99.js"></script>
+        <script src="./js/firebaseAPI_BBY03.js"></script>
+        <script src="./js/authentication.js"></script>
     </div>
 </body>
 

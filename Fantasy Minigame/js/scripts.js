@@ -8,11 +8,11 @@
 // 
 
 var sold = function(){
-    alert('Sold')
+    alert('You have selected "No"')
 }
 
 var bought = function(){
-    alert('Bought')
+    alert('You have selected "Yes"')
 }
 
 window.addEventListener('DOMContentLoaded', event => {
