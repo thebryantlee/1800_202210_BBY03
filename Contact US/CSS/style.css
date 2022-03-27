@@ -10044,3 +10044,15 @@ textarea.form-control {
   font-size: 16px;
   font-weight: 500;
 }
+@font-face{
+  font-family: 'gotham';
+  src: url(/fonts/Gotham.ttf);
+}
+@font-face {
+  font-family: 'rog';
+  src: url(/fonts/Rog.ttf);
+}
+@font-face {
+  font-family: 'mar';
+  src: url(/fonts/marguerite.ttf);
+}
