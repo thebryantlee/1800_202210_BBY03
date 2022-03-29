@@ -60,6 +60,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
 function insertName() {
     //To check if the user is logged in
     firebase.auth().onAuthStateChanged(user => {
