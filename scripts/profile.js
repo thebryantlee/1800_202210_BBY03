@@ -9,6 +9,7 @@ function insertName() {
                 var user_Name = userDoc.data().name;
                 console.log(user_Name);
                 document.getElementById("name-goes-here").innerHTML = user_Name;
+                document.getElementById("name-goes-here-too").innerHTML = user_Name;
             })
         }
     })
