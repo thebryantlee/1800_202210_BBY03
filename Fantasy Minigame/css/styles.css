@@ -119,6 +119,36 @@
   width: 75px;
 }
 
+#EileenImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#HenrikImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#MarkImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#ShaunImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#YuzuruImage {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
