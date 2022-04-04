@@ -61,15 +61,22 @@ function populateCardsDynamically() {
             allNews.forEach(doc => {
                 var newsName = doc.data().name; //gets the name field
                 var newsID = doc.data().id; //gets the unique ID field
-                let testNewsCard = newsCardTemplate.content.cloneNode(true);
-                testNewsCard.querySelector('.card-title').innerHTML = newsName;
+                // let testNewsCard = newsCardTemplate.content.cloneNode(true);
+                // testNewsCard.querySelector('.card-title').innerHTML = newsName;
+
+                newsCardTemplate.querySelector('.card-title').innerHTML = newsName;
 
                 //testHikeCard.querySelector('.card-length').innerHTML = hikeLength;
                 //NEW LINE: update to display details
-                testNewsCard.querySelector('.card-text').innerHTML =
+                // testNewsCard.querySelector('.card-text').innerHTML =
+                //     "Details: " + doc.data().details;
+
+                // testNewsCard.querySelector('a').onclick = () => setNewsData(newsID);
+
+                newsCardGroup.querySelector('.card-text').innerHTML =
                     "Details: " + doc.data().details;
 
-                testNewsCard.querySelector('a').onclick = () => setNewsData(newsID);
+                newsCardGroup.querySelector('a').onclick = () => setNewsData(newsID);
 
                 // week 10 vid : time - 1:33:31 for image
                 // testNewsCard.querySelector('.read-more').href = "eachHike.html?hikeName=" + newsName + "&id=" + newsID;
