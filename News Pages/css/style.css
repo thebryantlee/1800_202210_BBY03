@@ -5137,6 +5137,10 @@ textarea.form-control-lg {
   border-top-width: 1px;
 }
 
+.material-icons{
+  cursor: pointer;
+}
+
 .list-group-horizontal {
   flex-direction: row;
 }

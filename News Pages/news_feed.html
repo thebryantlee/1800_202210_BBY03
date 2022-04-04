@@ -14,8 +14,13 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="./css/style.css" rel="stylesheet" />
 
-  <!--test link here-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -75,7 +80,7 @@
                   alt="..." />
               </a>
               <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 1/assets/Curling.jpg" alt="..." /> -->
-              <div class="card-body p-4">
+              <div class="card-body p-4" id="temp">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
                 <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
                 <h5 class="card-title mb-3">Curling</h5>
@@ -84,8 +89,6 @@
                   Playing on a rectangle sheet of ice, the objective is to get your team’s granite stones closer to the
                   centre of a four-ringed target
                   (known as the house) than those of your opposing team.</p>
-                  <i class="material-icons " id="saved">bookmark_border</i>
-                  <p id="action"></p>
               </div>
               <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                 <div class="d-flex align-items-end justify-content-between">
@@ -113,8 +116,6 @@
                 <p class="card-text mb-0">Look forward to teams competeting out on the ice!.
                   Vote in our mini game to who you think will win this years gold medals!
                 </p>
-                <i class="material-icons" id="saved1">bookmark_border</i>
-                <p id="action1"></p>
               </div>
               <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                 <div class="d-flex align-items-end justify-content-between">
@@ -142,8 +143,6 @@
                 <p class="card-text mb-0">Ice skating is the self-propulsion and gliding of a person across an ice
                   surface,
                   using metal-bladed ice skates.</p>
-                  <i class="material-icons" id="saved2">bookmark_border</i>
-                  <p id="action2"></p>
               </div>
               <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                 <div class="d-flex align-items-end justify-content-between">
@@ -171,8 +170,6 @@
                 <p class="card-text mb-0">Snowboarding is a recreational and competitive activity that involves
                   descending a snow-covered slope while standing
                   on a snowboard that is almost always attached to a rider's feet.</p>
-                  <i class="material-icons" id="saved3">bookmark_border</i>
-                  <p id="action3"></p>
               </div>
               <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                 <div class="d-flex align-items-end justify-content-between">
@@ -200,8 +197,6 @@
                   figure skates on ice.
                   It was the first winter sport to be included in the Olympic Games, when contested at the 1908 Olympics
                   in London.</p>
-                  <i class="material-icons" id="saved4">bookmark_border</i>
-                  <p id="action4"></p>
               </div>
               <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                 <div class="d-flex align-items-end justify-content-between">
@@ -228,6 +223,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
   <script src="./js/scripts.js"></script>
+  <script src="/scripts/firebaseAPI_BBY03.js"></script>
 </body>
 
 </html>
