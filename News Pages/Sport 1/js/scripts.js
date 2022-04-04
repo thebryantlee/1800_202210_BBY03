@@ -23,31 +23,6 @@
 //     }
 // });
 
-// lecture march 1st = time at 1:42:25
-// function writeNewsData() {
-//     max = 7;
-//     //define a variable for the collection you want to create in firestore to populate the data
-//     var newsRef = db.collection("News");
-//     for (i = 1; i < max; i++) {
-//         // this line below adds to database, autogenerates an ID
-//         newsRef.add({
-//             code: "id" + i,
-//             name: "news" + i,
-//             details: "Insert news data here" + i
-//         })
-//         newsRef.add({
-//             code: "id" + i,
-//             name: "news2" + i,
-//             details: "Insert news data here" + i
-
-//         })
-//         newsRef.add({
-//             code: "id" + i,
-//             name: "news3" + i,
-//             details: "Insert news data here" + i
-//         })
-
-//     }
 
 function writeNewsData() {
     //define a variable for the collection you want to create in firestore to populate the data
