@@ -1,8 +1,5 @@
-//--------------------------------------------------------------------------
-// This is a function that gets called everytime the page loads.
-// It is meant to get the name of the user who is logged in, and insert it
-// on the page for a warm welcome.
-//--------------------------------------------------------------------------
+// JS function to insert the name of the logged in user on the "Welcome back" message.
+// Use this for other pages.
 function insertName() {
     //To check if the user is logged in
     firebase.auth().onAuthStateChanged(user => {
@@ -19,6 +16,7 @@ function insertName() {
     })
 }
 insertName();
+
 function populateInfo() {
     firebase.auth().onAuthStateChanged(user => {
         // Check if user is signed in:
@@ -82,4 +80,20 @@ function saveUserInfo() {
                 })
         }
     })
+}
+
+//-----------------------------------------------------------------------------
+// This function is called whenever the user clicks on the Prediction buttons.
+// It adds the prediction to the "prediction" array
+//-----------------------------------------------------------------------------
+function savePrediction(hikeID) {
+    currentUser.set({
+            predictions: firebase.firestore.FieldValue.arrayUnion(hikeID)
+        }, {
+            merge: true
+        })
+        .then(function () {
+            console.log("Prediction has been saved for: " + currentUser);
+            var iconID = 'prediction-' + hikeID;
+        });
 }
