@@ -11324,3 +11324,46 @@ html {
   background-repeat: no-repeat;
   min-height: 15rem;
 }
+
+
+.navbar .dropdown a:hover:before, .navbar .dropdown:hover > a:before, .navbar .dropdown .active:before {
+  visibility: hidden;
+}
+.navbar .dropdown a:hover, .navbar .dropdown .active, .navbar .dropdown .active:focus, .navbar .dropdown:hover > a {
+  color: var(--color-white);
+  background: var(--color-secondary);
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 0;
+  padding: 0 0 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: var(--color-secondary);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 400;
+  color: rgba(var(--color-white-rgb), 0.5);
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
