@@ -82,18 +82,41 @@ function saveUserInfo() {
     })
 }
 
+let predictionID = localStorage.getItem("predictionID");
+
+db.collection("users").where("id", "==", predictionID)
+    .get()
+    .then(queryPrediction => {
+        //see how many results you have got from the query
+        size = queryPrediction.size;
+        // get the documents of query
+        Hikes = queryPrediction.docs;
+
+        if (size = 1) {
+            var thisPrediction = users[0].data();
+            predictionName = thisPrediction.name;
+            console.log(hikeName);
+            document.getElementById("predictionName").innerHTML = predictionName;
+        } else {
+            console.log("Query has more than one data")
+        }
+    })
+    .catch((error) => {
+        console.log("Error getting documents: ", error);
+    });
+
 //-----------------------------------------------------------------------------
 // This function is called whenever the user clicks on the Prediction buttons.
 // It adds the prediction to the "prediction" array
 //-----------------------------------------------------------------------------
-function savePrediction(hikeID) {
+function savePrediction(predictionID) {
     currentUser.set({
-            predictions: firebase.firestore.FieldValue.arrayUnion(hikeID)
+            predictions: firebase.firestore.FieldValue.arrayUnion(predictionID)
         }, {
             merge: true
         })
         .then(function () {
             console.log("Prediction has been saved for: " + currentUser);
-            var iconID = 'prediction-' + hikeID;
+            var iconID = 'prediction-' + predictionID;
         });
 }
