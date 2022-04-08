@@ -42,6 +42,43 @@ function insertName() {
     })
 }
 
+function writeHikes() {
+    //define a variable for the collection you want to create in Firestore to populate data
+    var hikesRef = db.collection("Hikes");
+
+    hikesRef.add({
+        id: "BBY01",
+        name: "Burnaby Lake Park Trail", //replace with your own city?
+        city: "Burnaby",
+        province: "BC",
+        level: "easy",
+        length: 10, //number value
+        length_time: 60, //number value
+        last_updated: firebase.firestore.FieldValue.serverTimestamp() //current system time
+    });
+    hikesRef.add({
+        id: "AM01",
+        name: "Buntzen Lake Trail", //replace with your own city?
+        city: "Anmore",
+        province: "BC",
+        level: "moderate",
+        length: 10.5, //number value
+        length_time: 80, //number value
+        last_updated: firebase.firestore.Timestamp.fromDate(new Date("March 10, 2022"))
+    });
+    hikesRef.add({
+        id: "NV01",
+        name: "Mount Seymour Trail", //replace with your own city?
+        city: "North Vancouver",
+        province: "BC",
+        level: "hard",
+        length: 8.2, //number value
+        length_time: 120, //number value
+        last_updated: firebase.firestore.Timestamp.fromDate(new Date("January 1, 2022"))
+    });
+}
+
+
 function populateCardsDynamically() {
     let hikeCardTemplate = document.getElementById("hikeCardTemplate");
     let hikeCardGroup = document.getElementById("hikeCardGroup");
@@ -77,4 +114,18 @@ function populateCardsDynamically() {
             })
 
         })
+}
+
+function saveBookmark(hikeID){
+    currentUser.set({
+        bookmarks: firebase.firestore.FieldValue.arrayUnion(hikeID)
+    }, {
+        merge: true
+    })
+    .then(function(){
+        console.log("bookmark has been saved for: " + currentUser);
+        var iconID = 'save-' +hikeID;
+        // console.log(iconID);
+        document.getElementById(iconID).innerText = 'bookmark';
+    })
 }
