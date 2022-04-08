@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
+    <!-------------------------------------------------------->
+    <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+    <!-------------------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <title>Sports | OnlySportsFans</title>
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="/index.html"><span
+                    style="font-family: gotham; font-weight:900;">Only</span><span style="font-family: rog;">Sports
+                </span><span style="font-family: mar; color: #00AFF0;">Fans</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/News Pages/news_feed.html">Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/News Pages/news_feed.html">Saved Sports</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Fantasy Minigame/fantasy.html">Minigame</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Download/index.html">Download Our App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/profile.html">Profile</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login.html">Login</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Contact US/index.html">Contact Us</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="display: none;">
+        <br>
+        <h1>Information of <span id="HikeName"></span></h1>
+        <div id="details-go-here"></div>
+        <br>
+        <br>
+    </div>
+    <h4 style="font-size: 3rem; text-align: center;"><strong>Select your desired Sport to see its news.</strong></h4>
+    <section class="py-5">
+        <div class="container px-5 my-5">
+          <div class="row gx-5">
+            <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                <a href="/News Pages/Sport 1/index.html" target="blank">
+                  <img class="card-img-top" src="/News Pages/Sport 1/assets/Curling.jpg" alt="..." />
+                </a>
+                <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 1/assets/Curling.jpg" alt="..." /> -->
+                <div class="card-body p-4" id="temp">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                  <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
+                  <h5 class="card-title mb-3">Curling</h5>
+                  </a>
+                  <p class="card-text mb-0">Curling is one of the most strategic sports at the Olympic Winter Games.
+                    Playing on a rectangle sheet of ice, the objective is to get your team’s granite stones closer to the
+                    centre of a four-ringed target
+                    (known as the house) than those of your opposing team.</p>
+                  <i class="material-icons">bookmark_border</i>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="small">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                <a href="/News Pages/Sport 2/index.html" target="blank">
+                  <img class="card-img-top" src="/News Pages/Sport 2/assets/Ice Hockey.jpg" alt="...">
+                </a>
+                <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 2/assets/Ice Hockey.jpg"
+                  alt="..." /> -->
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                  <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
+                  <h5 class="card-title mb-3">Hockey</h5>
+                  </a>
+                  <p class="card-text mb-0">Look forward to teams competeting out on the ice!.
+                    Vote in our mini game to who you think will win this years gold medals!
+                  </p>
+                  <i class="material-icons">bookmark_border</i>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="small">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                <a href="/News Pages/Sport 3/index.html" target="blank">
+                  <img class="card-img-top" src="./Sport 3/assets/figure skating.jpg" alt="...">
+                </a>
+                <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 3/assets/figure skating.jpg"
+                  alt="..." /> -->
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                  <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
+                  <h5 class="card-title mb-3">Figure Skating</h5>
+                  </a>
+                  <p class="card-text mb-0">Ice skating is the self-propulsion and gliding of a person across an ice
+                    surface,
+                    using metal-bladed ice skates.</p>
+                  <i class="material-icons">bookmark_border</i>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="small">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                <a href="/News Pages/Sport 4/index.html" target="blank">
+                  <img class="card-img-top" src="/News Pages/Sport 4/assets/Snowboarding.jpg" alt="..." />
+                </a>
+                <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 4/assets/Snowboarding.jpg"
+                  alt="..." /> -->
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
+                  <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
+                  <h5 class="card-title mb-3">Snowboarding</h5>
+                  </a>
+                  <p class="card-text mb-0">Snowboarding is a recreational and competitive activity that involves
+                    descending a snow-covered slope while standing
+                    on a snowboard that is almost always attached to a rider's feet.</p>
+                  <i class="material-icons">bookmark_border</i>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="small">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+              <div class="card h-100 shadow border-0">
+                <a href="./Sport 5/index.html" target="blank">
+                  <img class="card-img-top" src="/News Pages/Sport 5/assets/skating.jpg" alt="..." />
+                </a>
+                <!-- <img class="card-img-top" src="/OnlySportsFans coding/News Pages/Sport 5/assets/skating.jpg" alt="..." /> -->
+                <div class="card-body p-4">
+                  <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                  <!-- <a class="text-decoration-none link-dark stretched-link" href="#!"> -->
+                  <h5 class="card-title mb-3">Figure Skating</h5>
+                  </a>
+                  <p class="card-text mb-0">Figure skating is a sport in which individuals, pairs, or groups perform on
+                    figure skates on ice.
+                    It was the first winter sport to be included in the Olympic Games, when contested at the 1908 Olympics
+                    in London.</p>
+                  <i class="material-icons">bookmark_border</i>
+                </div>
+                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                  <div class="d-flex align-items-end justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="small">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5" style="padding:100px;">Copyright &copy; OnlySportsFans 2022</div>
+  </footer>
+    <script src="./js/firebaseAPI_BBY03.js"></script>
+    <script src="./js/eachSport.js"></script>
+</body>
+
+</html>
