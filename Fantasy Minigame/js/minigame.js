@@ -117,6 +117,5 @@ function savePrediction(predictionID) {
         })
         .then(function () {
             console.log("Prediction has been saved for: " + currentUser);
-            var iconID = 'prediction-' + predictionID;
         });
 }
