@@ -1,3 +1,8 @@
+//--------------------------------------------------------------------------
+// This is a function that gets called everytime the page loads.
+// It is meant to get the name of the user who is logged in, and insert it
+// on the page for a warm welcome.
+//--------------------------------------------------------------------------
 function insertName() {
     //To check if the user is logged in
     firebase.auth().onAuthStateChanged(user => {
