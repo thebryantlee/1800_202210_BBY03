@@ -73,425 +73,437 @@
     <!--main content-->
     <!-- link below -->
     <!--insert js here from demo 8-10-->
-    <div id="firebaseui-auth-container">
-        <h1>Welcome Back, <span id="name-goes-here"></span></h1>
+    <strong><div id="firebaseui-auth-container" style="margin-top: 3vh;">
+        <h1>Welcome Back, <span id="name-goes-here">User</span></h1>
     </div>
     <!-- <span id="userName"></span></h1> -->
-    <div class="inner_left">
-        <div class="league_cover_wrapper">
-            <div id="best" class="player_search_tabs activ">
-                <div class="players_responsive_table_wrapper">
-                    <table class="table">
-                        <!-- Athlete 1 -->
-                        <!-- Team Canada -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete1.html" target="_blank">Team
-                                            Canada</a>
-                                        <p>Men's Hockey</p>
-                                        <p>Canada</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture1">
-                                            <a target="_blank">
-                                                <img id="CanadaImage" alt="" style="max-width: 70%"
-                                                    src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg">
+    
+        <div class="inner_left" style="font-size: 1.3rem;">
+            <div class="league_cover_wrapper">
+                <div id="best" class="player_search_tabs activ">
+                    <div class="players_responsive_table_wrapper">
+                        <table class="table">
+                            <!-- Athlete 1 -->
+                            <!-- Team Canada -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete1.html"
+                                                target="_blank">Team
+                                                Canada</a>
+                                            <p>Men's Hockey</p>
+                                            <p>Canada</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture1">
+                                                <a target="_blank">
+                                                    <img id="CanadaImage" alt="" style="max-width: 70%"
+                                                        src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Team Canada:</p>
-                                        <p>- Podium finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Team Canada:</p>
+                                            <p>- Podium finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_one" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_one" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(1)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(1)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(1)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(1)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 2 -->
-                        <!-- Chloe Kim -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete2.html" target="_blank">Chloe
-                                            Kim</a>
-                                        <p>Women's Snowboard Halfpipe</p>
-                                        <p>USA</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture2">
-                                            <a target="_blank">
-                                                <img id="ChloeImage" alt=""
-                                                    src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                </td>
+                            </tr>
+                            <!-- Athlete 2 -->
+                            <!-- Chloe Kim -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete2.html"
+                                                target="_blank">Chloe
+                                                Kim</a>
+                                            <p>Women's Snowboard Halfpipe</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture2">
+                                                <a target="_blank">
+                                                    <img id="ChloeImage" alt=""
+                                                        src="https://i.guim.co.uk/img/media/cfe602ce59a016efd052505f74e9ba7df4a5ef36/0_138_3500_2100/master/3500.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=60d270b658d9b32f7a376a1832583e93">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Chloe Kim:</p>
-                                        <p>- Gold medal finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Chloe Kim:</p>
+                                            <p>- Gold medal finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_two" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_two" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(2)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(2)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(2)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(2)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 3 -->
-                        <!-- Kent Johnson -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete3.html" target="_blank">Kent
-                                            Johnson</a>
-                                        <p>Men's Hockey</p>
-                                        <p>Canada</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture3">
-                                            <a target="_blank">
-                                                <img id="KentImage" alt=""
-                                                    src="https://bchl.ca/wp-content/uploads/2019/10/Johnson-2252.jpg">
+                                </td>
+                            </tr>
+                            <!-- Athlete 3 -->
+                            <!-- Kent Johnson -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete3.html"
+                                                target="_blank">Kent
+                                                Johnson</a>
+                                            <p>Men's Hockey</p>
+                                            <p>Canada</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture3">
+                                                <a target="_blank">
+                                                    <img id="KentImage" alt=""
+                                                        src="https://bchl.ca/wp-content/uploads/2019/10/Johnson-2252.jpg">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Kent Johnson:</p>
-                                        <p>- Score more than 3 goals in the tournament</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Kent Johnson:</p>
+                                            <p>- Score more than 3 goals in the tournament</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_three" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_three" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(3)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(3)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(3)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(3)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 4 -->
-                        <!-- Eileen Gu -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete4.html" target="_blank">Eileen
-                                            Gu</a>
-                                        <p>Women's Freeski Big Air</p>
-                                        <p>China</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture4">
-                                            <a target="_blank">
-                                                <img id="EileenImage" alt=""
-                                                    src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2022/01/09114037/eileen-gu-square.jpg">
+                                </td>
+                            </tr>
+                            <!-- Athlete 4 -->
+                            <!-- Eileen Gu -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete4.html"
+                                                target="_blank">Eileen
+                                                Gu</a>
+                                            <p>Women's Freeski Big Air</p>
+                                            <p>China</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture4">
+                                                <a target="_blank">
+                                                    <img id="EileenImage" alt=""
+                                                        src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2022/01/09114037/eileen-gu-square.jpg">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Eileen Gu:</p>
-                                        <p>- Gold medal finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Eileen Gu:</p>
+                                            <p>- Gold medal finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_four" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_four" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(4)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(4)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(4)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(4)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 5 -->
-                        <!-- Henrik Harlaut -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete5.html" target="_blank">Henrik
-                                            Harlaut</a>
-                                        <p>Men's Freeski Big Air</p>
-                                        <p>Sweden</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture5">
-                                            <a target="_blank">
-                                                <img id="HenrikImage" alt=""
-                                                    src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/crj0wyfiwkx5tuugb5xa">
+                                </td>
+                            </tr>
+                            <!-- Athlete 5 -->
+                            <!-- Henrik Harlaut -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete5.html"
+                                                target="_blank">Henrik
+                                                Harlaut</a>
+                                            <p>Men's Freeski Big Air</p>
+                                            <p>Sweden</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture5">
+                                                <a target="_blank">
+                                                    <img id="HenrikImage" alt=""
+                                                        src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/crj0wyfiwkx5tuugb5xa">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Henrik Harlaut:</p>
-                                        <p>- Podium finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Henrik Harlaut:</p>
+                                            <p>- Podium finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_five" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_five" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(5)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(5)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(5)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(5)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 6 -->
-                        <!-- Mark McMorris -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete6.html" target="_blank">Mark
-                                            McMorris</a>
-                                        <p>Men's Snowboard Big Air</p>
-                                        <p>Canada</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture6">
-                                            <a target="_blank">
-                                                <img id="MarkImage" alt=""
-                                                    src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/utr6c4wnlu1zkcy8nafs">
+                                </td>
+                            </tr>
+                            <!-- Athlete 6 -->
+                            <!-- Mark McMorris -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete6.html"
+                                                target="_blank">Mark
+                                                McMorris</a>
+                                            <p>Men's Snowboard Big Air</p>
+                                            <p>Canada</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture6">
+                                                <a target="_blank">
+                                                    <img id="MarkImage" alt=""
+                                                        src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/utr6c4wnlu1zkcy8nafs">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Mark McMorris:</p>
-                                        <p>- Podium finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Mark McMorris:</p>
+                                            <p>- Podium finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_six" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_six" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(6)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(6)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(6)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(6)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 7 -->
-                        <!-- Shaun White -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete7.html" target="_blank">Shaun
-                                            White</a>
-                                        <p>Men's Snowboard Halfpipe</p>
-                                        <p>USA</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture7">
-                                            <a target="_blank">
-                                                <img id="ShaunImage" alt=""
-                                                    src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDA3MzcwNjY3MDc0ODMz/shaun-white-olympics-skateboardingjpg.jpg">
+                                </td>
+                            </tr>
+                            <!-- Athlete 7 -->
+                            <!-- Shaun White -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete7.html"
+                                                target="_blank">Shaun
+                                                White</a>
+                                            <p>Men's Snowboard Halfpipe</p>
+                                            <p>USA</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture7">
+                                                <a target="_blank">
+                                                    <img id="ShaunImage" alt=""
+                                                        src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY4MDA3MzcwNjY3MDc0ODMz/shaun-white-olympics-skateboardingjpg.jpg">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Shaun White:</p>
-                                        <p>- Finish in the top half of competitors</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Shaun White:</p>
+                                            <p>- Finish in the top half of competitors</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_seven" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_seven" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(7)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(7)" class="btn btn-primary">YES</a>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(7)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(7)" class="btn btn-primary">YES</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <!-- Athlete 8 -->
-                        <!-- Yuzuru Hanyu -->
-                        <tr>
-                            <td class="profile_info">
-                                <div class="align-items-center justify-content-start">
-                                    <div class="wrapper">
-                                        <a href="player-profile.html"
-                                            class="d-flex align-items-end justify-content-center">
-                                        </a>
-                                    </div>
-                                    <div class="player_name">
-                                        <a href="/Fantasy Minigame/athleteprofiles/athlete8.html" target="_blank">Yuzuru
-                                            Hanyu</a>
-                                        <p>Men Single Skating</p>
-                                        <p>Japan</p>
-                                    </div>
-                                    <div class="player_photo">
-                                        <figure id="Picture8">
-                                            <a target="_blank">
-                                                <img id="YuzuruImage" alt=""
-                                                    src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/gxts3zdtbcf6sb2bid9s">
+                                </td>
+                            </tr>
+                            <!-- Athlete 8 -->
+                            <!-- Yuzuru Hanyu -->
+                            <tr>
+                                <td class="profile_info">
+                                    <div class="align-items-center justify-content-start">
+                                        <div class="wrapper">
+                                            <a href="player-profile.html"
+                                                class="d-flex align-items-end justify-content-center">
                                             </a>
-                                        </figure>
+                                        </div>
+                                        <div class="player_name">
+                                            <a href="/Fantasy Minigame/athleteprofiles/athlete8.html"
+                                                target="_blank">Yuzuru
+                                                Hanyu</a>
+                                            <p>Men Single Skating</p>
+                                            <p>Japan</p>
+                                        </div>
+                                        <div class="player_photo">
+                                            <figure id="Picture8">
+                                                <a target="_blank">
+                                                    <img id="YuzuruImage" alt=""
+                                                        src="https://img.olympicchannel.com/images/image/private/t_1-1_600/f_auto/v1538355600/primary/gxts3zdtbcf6sb2bid9s">
+                                                </a>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td class="price_range">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <div class="price">
-                                        <p>The following odd(s) are available for Yuzuru Hanyu:</p>
-                                        <p>- Podium finish</p>
-                                        <p><i>Use the buttons on the right to make your selection.</i></p>
+                                </td>
+                                <td class="price_range">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="price">
+                                            <p>The following odd(s) are available for Yuzuru Hanyu:</p>
+                                            <p>- Podium finish</p>
+                                            <p><i>Use the buttons on the right to make your selection.</i></p>
+                                        </div>
+                                        <div id="profile_chart_eight" class="charts">
+                                        </div>
                                     </div>
-                                    <div id="profile_chart_eight" class="charts">
+                                </td>
+                                <td class="sell_buy">
+                                    <div class="btn_wrapper d-flex align-items-center  justify-content-end">
+                                        <a onclick="sold(8)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
+                                        <a onclick="bought(8)" class="btn btn-primary">YES</a>
                                     </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Minigame Features -->
+                    <div class="container px-4 py-5" id="hanging-icons">
+                        <h2 class="pb-2 border-bottom">Fantasy Minigame - How to Play</h2>
+                        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                            <div class="col d-flex align-items-start">
+                                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                                    <svg class="bi" width="1em" height="1em">
+                                        <use xlink:href="#toggles2" /></svg>
                                 </div>
-                            </td>
-                            <td class="sell_buy">
-                                <div class="btn_wrapper d-flex align-items-center  justify-content-end">
-                                    <a onclick="sold(8)" style="margin-right: 5px;" class="btn btn-primary">NO</a>
-                                    <a onclick="bought(8)" class="btn btn-primary">YES</a>
+                                <div>
+                                    <h2>Find your athlete</h2>
+                                    <p>Scroll down the list of athletes and teams, and their respective events on
+                                        the page to view the different predictions you can choose from!
+                                    </p>
                                 </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <!-- Minigame Features -->
-                <div class="container px-4 py-5" id="hanging-icons">
-                    <h2 class="pb-2 border-bottom">Fantasy Minigame - How to Play</h2>
-                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                        <div class="col d-flex align-items-start">
-                            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#toggles2" /></svg>
                             </div>
-                            <div>
-                                <h2>Find your athlete</h2>
-                                <p>Scroll down the list of athletes and teams, and their respective events on
-                                    the page to view the different predictions you can choose from!
-                                </p>
+                            <div class="col d-flex align-items-start">
+                                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                                    <svg class="bi" width="1em" height="1em">
+                                        <use xlink:href="#cpu-fill" /></svg>
+                                </div>
+                                <div>
+                                    <h2>Read the predictions</h2>
+                                    <p>Each athlete and team has a different prediction based on their event.
+                                        Some may be finishing in a certain position or achieving a specific goal in
+                                        their
+                                        event.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#cpu-fill" /></svg>
-                            </div>
-                            <div>
-                                <h2>Read the predictions</h2>
-                                <p>Each athlete and team has a different prediction based on their event.
-                                    Some may be finishing in a certain position or achieving a specific goal in their
-                                    event.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col d-flex align-items-start">
-                            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                                <svg class="bi" width="1em" height="1em">
-                                    <use xlink:href="#tools" /></svg>
-                            </div>
-                            <div>
-                                <h2>Make a prediction!</h2>
-                                <p>After you've read the predictions, use the "Yes" or "No" buttons to make your choice.
-                                    Have fun!
-                                </p>
+                            <div class="col d-flex align-items-start">
+                                <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                                    <svg class="bi" width="1em" height="1em">
+                                        <use xlink:href="#tools" /></svg>
+                                </div>
+                                <div>
+                                    <h2>Make a prediction!</h2>
+                                    <p>After you've read the predictions, use the "Yes" or "No" buttons to make your
+                                        choice.
+                                        Have fun!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+    </strong>
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">&copy; OnlySportsFans 2022. All Rights Reserved
         </div>
-        <footer class="footer bg-black small text-center text-white-50">
-            <div class="container px-4 px-lg-5">&copy; OnlySportsFans 2022. All Rights Reserved
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-        </script>
-        <!-- Core theme JS-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script src="./js/firebaseAPI_BBY03.js"></script>
-        <script src="./js/minigame.js"></script>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Core theme JS-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="./js/firebaseAPI_BBY03.js"></script>
+    <script src="./js/minigame.js"></script>
     </div>
 </body>
 

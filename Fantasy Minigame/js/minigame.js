@@ -127,25 +127,25 @@ var sold = function (athlete_ID) {
         if (user) {
             currentUser = db.collection("users").doc(user.uid);
             currentUser.get().then(userDoc => {
-                if(userDoc.data().predictions) {
+                if (userDoc.data().predictions) {
                     var predictionArr = userDoc.data().predictions;
-                if(predictionArr.find(p => p.athleteID == athlete_ID)) {
-                    predictionArr.find(p => p.athleteID == athlete_ID).prediction = 0;
-                } else {
-                    const newPrediction = {
-                        athleteID: athlete_ID,
-                        prediction: 0
-                    };
-                    predictionArr.push(newPrediction);
-                }
-                currentUser.update({
-                    predictions: predictionArr
-                    }, {
-                        merge: true
-                    })
-                    .then(function () {
-                        console.log("Prediction has been saved for: " + currentUser.name);
-                    });
+                    if (predictionArr.find(p => p.athleteID == athlete_ID)) {
+                        predictionArr.find(p => p.athleteID == athlete_ID).prediction = 0;
+                    } else {
+                        const newPrediction = {
+                            athleteID: athlete_ID,
+                            prediction: 0
+                        };
+                        predictionArr.push(newPrediction);
+                    }
+                    currentUser.update({
+                            predictions: predictionArr
+                        }, {
+                            merge: true
+                        })
+                        .then(function () {
+                            console.log("Prediction has been saved for: " + currentUser.name);
+                        });
                 } else {
                     console.log("No predictions found.");
                     const Arr = [];
@@ -155,9 +155,9 @@ var sold = function (athlete_ID) {
                     };
                     Arr.push(newPrediction);
                     currentUser.set({
-                        email: userDoc.data().email,
-                        name: userDoc.data().name,
-                        predictions: Arr
+                            email: userDoc.data().email,
+                            name: userDoc.data().name,
+                            predictions: Arr
                         }, {
                             merge: true
                         })
@@ -176,25 +176,25 @@ var bought = function (athlete_ID) {
         if (user) {
             currentUser = db.collection("users").doc(user.uid);
             currentUser.get().then(userDoc => {
-                if(userDoc.data().predictions) {
+                if (userDoc.data().predictions) {
                     var predictionArr = userDoc.data().predictions;
-                if(predictionArr.find(p => p.athleteID == athlete_ID)) {
-                    predictionArr.find(p => p.athleteID == athlete_ID).prediction = 1;
-                } else {
-                    const newPrediction = {
-                        athleteID: athlete_ID,
-                        prediction: 1
-                    };
-                    predictionArr.push(newPrediction);
-                }
-                currentUser.update({
-                    predictions: predictionArr
-                    }, {
-                        merge: true
-                    })
-                    .then(function () {
-                        console.log("Prediction has been saved for: " + currentUser.name);
-                    });
+                    if (predictionArr.find(p => p.athleteID == athlete_ID)) {
+                        predictionArr.find(p => p.athleteID == athlete_ID).prediction = 1;
+                    } else {
+                        const newPrediction = {
+                            athleteID: athlete_ID,
+                            prediction: 1
+                        };
+                        predictionArr.push(newPrediction);
+                    }
+                    currentUser.update({
+                            predictions: predictionArr
+                        }, {
+                            merge: true
+                        })
+                        .then(function () {
+                            console.log("Prediction has been saved for: " + currentUser.name);
+                        });
                 } else {
                     console.log("No predictions found.");
                     const Arr = [];
@@ -204,9 +204,9 @@ var bought = function (athlete_ID) {
                     };
                     Arr.push(newPrediction);
                     currentUser.set({
-                        email: userDoc.data().email,
-                        name: userDoc.data().name,
-                        predictions: Arr
+                            email: userDoc.data().email,
+                            name: userDoc.data().name,
+                            predictions: Arr
                         }, {
                             merge: true
                         })
